@@ -3,7 +3,7 @@ using System.Linq;
 
 namespace PeselTools
 {
-    public class Pesel : IPesel
+    public class Pesel
     {
         private Pesel()
         {
@@ -60,6 +60,11 @@ namespace PeselTools
             {
                 return false;
             }
+        }
+
+        public override string ToString()
+        {
+            return Value;
         }
 
         private static PeselSex ParseSex(string value)
