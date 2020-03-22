@@ -1,7 +1,28 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard1.0</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Mateusz Przybylek</Authors>
+    <Company>Mateusz Przybylek</Company>
+    <Copyright>Copyright (c) Mateusz Przybylek</Copyright>
+    <Description>Tools and helpers for PESEL (Polish identification number). Simple and fast valid and parse (sex, birthday) from string values.</Description>
+    <PackageIcon>logo.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/GetoXs/PeselTools</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>https://github.com/GetoXs/PeselTools.git</RepositoryUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>pesel,polish,identification,number,id,helper,tools</PackageTags>
+    <Version>1.0.0</Version>
+    <SignAssembly>true</SignAssembly>
+    <AssemblyOriginatorKeyFile>..\..\..\PeselTools.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 
 </Project>
